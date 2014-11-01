@@ -188,7 +188,7 @@ a:link{
 	text-decoration:none;
 	color:#36291E;
 	margin-left:20px;
-	mragin-right:8px;
+	margin-right:8px;
 	margin-top:0px;
 	font-size:12px;
 	}
@@ -199,3 +199,63 @@ a:link{
 a:visited{
 	color:#36291E
 	}
+#przycisk{
+	margin:0 auto;
+	margin-top: 30px;
+	height:26px;
+	width:200px;
+	text-align: center;
+	font-size:15px;
+	background-color:#36200B;
+	padding: 8px;
+	color:#FFF3E7;
+	border-radius: 7px;
+	}
+
+#wiadomosc{
+	height:222px;
+	width:400px;
+	background-color:#D1B4A6;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding:8px;
+	padding-top:12px;
+	border-radius: 19px;
+	position: relative
+	}
+input{
+	float: right;
+	margin-right:60px;
+	font-size:12px;
+	width: 155px;
+	}
+.formu{
+	margin-bottom:14px;
+	font-weight: bold;
+}
+
+.podswietlenie{
+	
+}
+textarea{
+	width: 155px;
+	height:70px;
+	float: right;
+	margin-right:60px;
+	font-size:12px;
+	}
+#slij{
+	width: 70px;
+	float: right;
+	margin-right:80px;
+}
+#czysc{
+	margin-left:40px;
+	float: left;
+	font-size:10px;
+	width: 100px;
+}
+.error{
+	background-color: #FF1906;
+}
