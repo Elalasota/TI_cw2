@@ -50,6 +50,19 @@ function(){
 			$("#przycisk").text(ukryte ? "Masz uwagi? Napisz!": "Ukryj formularz");
 		}
 	);
+	$("#pasek").append("<p>Nie klikać!</p>");
+	$("#pasek p").css("font-size", "16px").css("color","#FFF6D0" ).css("text-align", "center");
+	$("#pasek p").click(function(){
+		console.log("Zmieniono");
+		$("body").css("background-color", "#F3C8D6");
+		$("#tresc").css("background-color", "#FCB9DE");
+		$("#pasek").css("background-color", "#FF2E9D");
+		$(".naglowki").css("background-color", "#FF2E9D");
+		$("#stopka").css("background-color", "#ED6EB2");
+		$("#logo").css("background-color", "#ED6EB2");
+		$(".czeko").css("background-color", "#D48EBB");
+		
+	});
 	
 	
 });
@@ -63,5 +76,5 @@ var $czeko= $("<p><span>Czekolada </span>(z nahuatl xocolatl – gorzka woda) �
 $("#tresc").prepend($czeko);
 $("#tresc").prepend($("div#tresc h3:first"));
 $("p#czcionka1").remove();
-$("#pasek").append("<p>Nie klikać!</p>");
+
 //$("#pasek").click(function())
