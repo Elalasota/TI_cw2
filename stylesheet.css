@@ -186,7 +186,6 @@ hr{
 	}	
 a:link{
 	text-decoration:none;
-	color:#36291E;
 	margin-left:20px;
 	margin-right:8px;
 	margin-top:0px;
@@ -235,8 +234,8 @@ input{
 	font-weight: bold;
 }
 
-.podswietlenie{
-	
+.jasny{
+	color:#FFF6D0;
 }
 textarea{
 	width: 155px;
@@ -257,5 +256,7 @@ textarea{
 	width: 100px;
 }
 .error{
-	background-color: #FF1906;
+	border:solid;
+	border-color:#FF2930;
+	background-color: #FFA4A0;
 }
