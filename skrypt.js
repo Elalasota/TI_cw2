@@ -62,15 +62,52 @@ function(){
 		$("#logo").css("background-color", "#ED6EB2");
 		$(".czeko").css("background-color", "#D48EBB");
 		
-	});
-	
-	
+	});	
 });
+
+obrazy=['obrazy/1.jpg', 'obrazy/2.jpg', 'obrazy/3.jpg', 'obrazy/4.jpg', 'obrazy/5.jpg'];
+
+$("#przod").click(function(){
+	nastepny_obraz();
+});
+
+$("#tyl").click(function(){
+	poprzedni_obraz();
+});
+function aktualny_obraz() {
+	i = jQuery.inArray($('#ruchoma_galeria').attr('src'), obrazy);
+	return i;}
+
+function zmien_obraz(i) {
+	$('#ruchoma_galeria').animate({opacity: 0},//pelna przezroczystosc
+	 function() {
+		$('#ruchoma_galeria').attr('src', obrazy[i]); //nadanie obrazkowi nowego atrybutu
+		$('#pudelko img').load(function() {
+			$('#ruchoma_galeria').stop().animate({	//stop w aktualnej animacji, kolejna - wylaczenie przezroczystosci
+				opacity: 1,
+			});});});}
+
+function nastepny_obraz() {
+	var i=aktualny_obraz();
+	if (i < obrazy.length - 1) {
+		zmien_obraz(i + 1);
+	} else {
+		zmien_obraz(0);
+	}};
+	
+function poprzedni_obraz() {
+	var i=aktualny_obraz();
+	if (i==0) {
+		zmien_obraz(obrazy.length-1);
+	} else {
+		zmien_obraz(i-1);
+	}};
+		
 
 function zaladuj(div, file){
 		$(div).load(file);
-		return false;
-};
+		return false;};
+		
 $("#wiadomosc").hide();
 var $czeko= $("<p><span>Czekolada </span>(z nahuatl xocolatl – gorzka woda) – wyrób cukierniczy sporządzany z miazgi kakaowej, tłuszczu kakaowego (masło kakaowe), środka słodzącego i innych dodatków.</p>");
 $("#tresc").prepend($czeko);

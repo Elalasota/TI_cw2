@@ -65,7 +65,7 @@ body {
 	margin-left:3px;
 	padding-top:3px;
 	width:744px;
-	min-height: 720px;
+	min-height: 900px;
 	}
 #stopka{
 	position: relative;
@@ -200,7 +200,7 @@ a:visited{
 	}
 #przycisk{
 	margin:0 auto;
-	margin-top: 30px;
+	margin-bottom: 30px;
 	height:26px;
 	width:200px;
 	text-align: center;
@@ -216,7 +216,7 @@ a:visited{
 	width:400px;
 	background-color:#D1B4A6;
 	margin:0 auto;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	padding:8px;
 	padding-top:12px;
@@ -260,6 +260,21 @@ textarea{
 	border-color:#FF2930;
 	background-color: #FFA4A0;
 }
-#klik{
-	
+
+#ruchoma_galeria{ 
+	height:150px; 
+	width:300px; 
+	}
+#pudelko { 
+	height:150px; 
+	width:460px; 
+	margin:0 auto; 
+	}
+#przod{
+	margin-bottom:60px;
+	width:80px;
+}
+#tyl{
+	margin-bottom:60px;
+	width:80px;
 }
