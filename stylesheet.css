@@ -195,9 +195,6 @@ a:link{
 	text-indent:-20px;
 	}
 
-a:visited{
-	color:#36291E
-	}
 #przycisk{
 	margin:0 auto;
 	margin-bottom: 30px;
@@ -209,6 +206,7 @@ a:visited{
 	padding: 8px;
 	color:#FFF3E7;
 	border-radius: 7px;
+	clear:both;
 	}
 
 #wiadomosc{
@@ -238,7 +236,7 @@ input{
 	color:#FFF6D0;
 }
 textarea{
-	width: 155px;
+	width: 152px;
 	height:70px;
 	float: right;
 	margin-right:60px;
@@ -267,7 +265,7 @@ textarea{
 	}
 #pudelko { 
 	height:150px; 
-	width:460px; 
+	width:480px; 
 	margin:0 auto; 
 	}
 #przod{

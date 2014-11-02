@@ -1,5 +1,13 @@
 $(document).ready(
 function(){	
+	$("p img").click(function(){ $(this).slideUp("slow");});
+	
+	$("h1").animate({opacity:"1"}, 500,function(){znikanie();} );
+function znikanie(){
+	$("h1").animate({opacity:"0"}, 1500);
+	$("h1").animate({opacity:"1"}, 750,function(){znikanie();});
+};
+
 	$("ul a:link").click(
 		function(){
 			var podstrona=$(this).attr('href');
@@ -9,6 +17,7 @@ function(){
 			});
 	$("li").hover(function(){$(this).addClass("jasny"); console.log("Najechano");}, function(){$(this).removeClass("jasny"); console.log("Odjechano");});
 	$("a").hover(function(){$(this).addClass("jasny"); console.log("Najechano");}, function(){$(this).removeClass("jasny"); console.log("Odjechano");});
+
 	$("#slij").click(function(){
 	function wiadomosc(typ){
 		var wyn=true;
@@ -63,9 +72,8 @@ function(){
 		$(".czeko").css("background-color", "#D48EBB");
 		
 	});	
-});
-
-obrazy=['obrazy/1.jpg', 'obrazy/2.jpg', 'obrazy/3.jpg', 'obrazy/4.jpg', 'obrazy/5.jpg'];
+	
+	obrazy=['obrazy/1.jpg', 'obrazy/2.jpg', 'obrazy/3.jpg', 'obrazy/4.jpg', 'obrazy/5.jpg'];
 
 $("#przod").click(function(){
 	nastepny_obraz();
@@ -108,10 +116,10 @@ function zaladuj(div, file){
 		$(div).load(file);
 		return false;};
 		
+});
 $("#wiadomosc").hide();
 var $czeko= $("<p><span>Czekolada </span>(z nahuatl xocolatl – gorzka woda) – wyrób cukierniczy sporządzany z miazgi kakaowej, tłuszczu kakaowego (masło kakaowe), środka słodzącego i innych dodatków.</p>");
 $("#tresc").prepend($czeko);
 $("#tresc").prepend($("div#tresc h3:first"));
 $("p#czcionka1").remove();
-
-//$("#pasek").click(function())
+$("<p>Kocham czekoladę!</p>").replaceAll(".bok");
